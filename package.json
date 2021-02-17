@@ -4,7 +4,8 @@
   "description": "This application will track date night possibilities.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint **/*.js --quiet"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,14 @@
   },
   "homepage": "https://github.com/lucpizz/Date-Night-Generator#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^7.20.0",
     "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql2": "^2.2.5",
     "node": "^15.8.0",
-    "nodemon": "^2.0.7"
+    "node.js": "0.0.1-security",
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.5.0"
   }
 }

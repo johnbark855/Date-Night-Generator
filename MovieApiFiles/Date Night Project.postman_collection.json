@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "ef884e4c-4d6e-42ca-8ad0-eaa083109c06",
+		"name": "Date Night Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Deezer API req",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "True",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "588216e7famsh2752fb22e9ec682p17fa74jsn07240aafab1d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "588216e7famsh2752fb22e9ec682p17fa74jsn07240aafab1d",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "deezerdevs-deezer.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deezerdevs-deezer.p.rapidapi.com/search?q=Yellow",
+					"protocol": "https",
+					"host": [
+						"deezerdevs-deezer",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Yellow"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Documenu API req",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "71b5bfaf79305a51800a453a79324cf8",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "588216e7famsh2752fb22e9ec682p17fa74jsn07240aafab1d",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "documenu.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://documenu.p.rapidapi.com/restaurants/zip_code/90210?zip_code=06824&fullmenu=True",
+					"protocol": "https",
+					"host": [
+						"documenu",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"restaurants",
+						"zip_code",
+						"90210"
+					],
+					"query": [
+						{
+							"key": "zip_code",
+							"value": "06824"
+						},
+						{
+							"key": "fullmenu",
+							"value": "True"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Weather API req",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "True",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "588216e7famsh2752fb22e9ec682p17fa74jsn07240aafab1d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RapidAPI-Key",
+						"value": "588216e7famsh2752fb22e9ec682p17fa74jsn07240aafab1d",
+						"type": "text"
+					},
+					{
+						"key": "X-RapidAPI-Host",
+						"value": "community-open-weather-map.p.rapidapi.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://community-open-weather-map.p.rapidapi.com/weather?q=Hartford,Connecticut",
+					"protocol": "https",
+					"host": [
+						"community-open-weather-map",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Hartford,Connecticut"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "client",
+						"value": "SCHO_29",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": " \taPhjnCnhZlaBSIFOB3jwB7d910N2furE9HkCdLkQ ",
+						"type": "text"
+					},
+					{
+						"key": "credential",
+						"value": " \t \tBasic U0NIT18yOV9YWDpaalFGWFB3M2dtT0s=  ",
+						"type": "text"
+					},
+					{
+						"key": "territory",
+						"value": "XX",
+						"type": "text"
+					},
+					{
+						"key": "api-version",
+						"value": "v200",
+						"type": "text"
+					},
+					{
+						"key": "geolocation",
+						"value": " \t-22.0;14.0",
+						"type": "text"
+					},
+					{
+						"key": "device-datetime",
+						"value": "2021-02-13T18:22:13.292Z",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": " Basic U0NIT18yOV9YWDpaalFGWFB3M2dtT0s= ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api-gate2.movieglu.com/",
+					"protocol": "https",
+					"host": [
+						"api-gate2",
+						"movieglu",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
